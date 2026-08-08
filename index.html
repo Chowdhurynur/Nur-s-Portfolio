@@ -23,17 +23,20 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="about">
-    <div class="hero-content">
-      <p class="tagline">✦ Rooted in Code & Design</p>
-      <h1>Carving Ideas into <br><span class="highlight">Digital Timber.</span></h1>
-      <p class="bio">
-        Hello! I’m <strong>Nur</strong>. Much like a craftsman shaping raw wood, I take complex web ideas and sculpt them into sturdy, organic, and modern web experiences.
-      </p>
-      <a href="#projects" class="btn">View My Crafts</a>
-    </div>
-  </section>
-
+  <
+  <!-- PASTE THIS INSTEAD -->
+<section id="hero">
+  <div>
+    <p>✦ Rooted in Code, Design & Global Affairs</p>
+    <h1>Carving Ideas into <br><span> Geopolitics.</span></h1>
+    <p>
+      Hello! I’m <strong>Nur</strong>. Web developer and <strong>International Relations enthusiast</strong>. 
+      I craft modern web experiences while analyzing global events, regional conflicts, and international geopolitics.
+    </p>
+    <a href="#columns">Read My Analysis</a>
+  </div>
+</section>
+  
   <!-- Projects Section -->
   <section class="projects" id="projects">
     <div class="section-title">
@@ -78,14 +81,53 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="contact-box">
-      <h2>Let’s Plant a Seed Together</h2>
-      <p>Have a project in mind, or just want to exchange thoughts over coffee? My inbox is always open.</p>
-      
-      <a href="mailto:nurchy380@gmail.com" class="email-btn">nurchy380@gmail.com</a>
-    </div>
-  </section>
+  <!-- Place before <section id="contact"> or <footer> -->
+<section id="columns">
+  <div class="section-header">
+    <h2>Geopolitical Columns & Analysis</h2>
+    <p>Exploring international relations, power dynamics, and regional security.</p>
+  </div>
+
+  <!-- Regional Category Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="filterArticles('all', event)">All Regions</button>
+    <button class="filter-btn" onclick="filterArticles('south-asia', event)">South Asian Affairs</button>
+    <button class="filter-btn" onclick="filterArticles('southeast-asia', event)">Southeast Asia</button>
+    <button class="filter-btn" onclick="filterArticles('africa', event)">African Studies</button>
+  </div>
+
+  <!-- Articles Container -->
+  <div class="articles-grid">
+    
+    <!-- South Asia Article Card -->
+    <article class="article-card south-asia">
+      <span class="tag">South Asian Affairs</span>
+      <h3>The Shifting Geopolitics of the Indian Ocean</h3>
+      <p class="date">August 2026</p>
+      <p>An examination of maritime security, trade routes, and strategic competition across South Asia.</p>
+      <a href="#" class="read-more">Read Column →</a>
+    </article>
+
+    <!-- Southeast Asia Article Card -->
+    <article class="article-card southeast-asia">
+      <span class="tag">Southeast Asia</span>
+      <h3>ASEAN Centrality in Great Power Competition</h3>
+      <p class="date">July 2026</p>
+      <p>Analyzing how Southeast Asian nations balance security and economic ties amidst global rivalry.</p>
+      <a href="#" class="read-more">Read Column →</a>
+    </article>
+
+    <!-- African Studies Article Card -->
+    <article class="article-card africa">
+      <span class="tag">African Studies</span>
+      <h3>Resource Security and Regional Integration in Africa</h3>
+      <p class="date">June 2026</p>
+      <p>Insights into energy transitions, economic partnerships, and political developments across the continent.</p>
+      <a href="#" class="read-more">Read Column →</a>
+    </article>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
@@ -97,6 +139,25 @@
   <h2>Contact Me</h2>
   <p>📱 Mobile: <a href="tel:+8801816109999"></a></p>
 </section>
+<script>
+  function filterArticles(category) {
+    const cards = document.querySelectorAll('.article-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Update active button styling
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Show/Hide relevant articles
+    cards.forEach(card => {
+      if (category === 'all' || card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
