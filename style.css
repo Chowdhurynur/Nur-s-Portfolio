@@ -1,9 +1,5 @@
 /* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: Arial, sans-serif;
@@ -27,83 +23,42 @@ nav {
   padding: 0 40px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+.logo { font-size: 24px; font-weight: bold; }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-}
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: #fff; text-decoration: none; transition: color 0.3s; }
+.nav-links a:hover { color: #1abc9c; }
 
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #1abc9c;
-}
-
-.hero {
-  margin-top: 20px;
-}
-
-.hero h2 {
-  font-size: 36px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
+.hero { margin-top: 20px; }
+.hero h2 { font-size: 36px; }
+.hero p { font-size: 18px; margin: 10px 0; }
 .hero button {
   padding: 10px 20px;
   background: #1abc9c;
   border: none;
   color: #fff;
   cursor: pointer;
-  transition: background 0.3s;
 }
-
-.hero button:hover {
-  background: #16a085;
-}
+.hero button:hover { background: #16a085; }
 
 /* Sections */
-section {
-  padding: 40px;
-  text-align: center;
-}
+section { padding: 40px; text-align: center; }
+section h2 { margin-bottom: 20px; font-size: 28px; color: #2c3e50; }
 
-section h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #2c3e50;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  margin: 10px 0;
+/* Expertise Box */
+.expertise-box {
+  background: lightgreen;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  font-family: 'Merriweather', serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 600px;
 }
 
 /* Cards */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
+.cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .card {
   background: #fff;
   padding: 20px;
@@ -111,11 +66,12 @@ ul li {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   width: 250px;
 }
+.card h3 { margin-bottom: 10px; color: #1abc9c; }
 
-.card h3 {
-  margin-bottom: 10px;
-  color: #1abc9c;
-}
+/* Timeline */
+.timeline { list-style: none; max-width: 600px; margin: auto; text-align: left; }
+.timeline li { margin: 15px 0; }
+.timeline span { font-weight: bold; color: #1abc9c; }
 
 /* Contact */
 form {
@@ -124,14 +80,12 @@ form {
   max-width: 400px;
   margin: auto;
 }
-
 form input, form textarea {
   margin: 10px 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 form button {
   background: #2c3e50;
   color: #fff;
@@ -139,10 +93,7 @@ form button {
   border: none;
   cursor: pointer;
 }
-
-form button:hover {
-  background: #1abc9c;
-}
+form button:hover { background: #1abc9c; }
 
 /* Footer */
 footer {
@@ -151,3 +102,4 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
