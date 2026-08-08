@@ -11,4 +11,13 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     `Thank you, ${name}! Your message has been received.`;
   this.reset();
 });
+.expertise-box {
+  background: #d0f0e3; /* muted teal */
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  font-family: 'Merriweather', serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 600px;
+}
 
