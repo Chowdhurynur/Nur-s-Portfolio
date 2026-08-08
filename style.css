@@ -3,8 +3,8 @@
   --bg-beige: #f5f2eb;
   --bg-card: #eae5d9;
   --green-deep: #1b3b2b;
-  --green-hover: #27523c;
-  --wood-accent: #8c5a3c;
+  --green-hover: #302752;
+  --wood-accent: #8c3c8b;
   --text-dark: #23221e;
   --text-muted: #5c584f;
   --font-heading: 'Cinzel', serif;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-beige);
+  background-color: var(--bg-dusty-rose);
   color: var(--text-dark);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -34,7 +34,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 8%;
-  background-color: rgba(245, 242, 235, 0.9);
+  background-color: rgba(235, 237, 245, 0.9);
   position: sticky;
   top: 0;
   backdrop-filter: blur(8px);
@@ -51,7 +51,7 @@ body {
 }
 
 .logo span {
-  color: var(--wood-accent);
+  color: var(----accent-maroon);
 }
 
 .nav-links {
@@ -96,7 +96,7 @@ body {
   font-family: var(--font-heading);
   font-size: 3.2rem;
   line-height: 1.2;
-  color: var(--green-deep);
+  color: var(#800020);
   margin-bottom: 1.5rem;
 }
 
@@ -231,6 +231,28 @@ body {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+#contact {
+  background-color: #d2b48c; /* light brown */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#contact h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #000; /* black text for contrast */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 .email-btn {
