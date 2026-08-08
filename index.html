@@ -3,161 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nur | Crafting Digital Timber</title>
+  <title>Ashra | Web Developer & IR Enthusiast</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts for Editorial & Earthy feel -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">NUR<span>.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">Root</a></li>
-      <li><a href="#projects">Crafts</a></li>
-      <li><a href="#contact">Reach Out</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <
-  <!-- PASTE THIS INSTEAD -->
-<section id="hero">
-  <div>
-    <p>✦ Rooted in Code, Design & Global Affairs</p>
-    <h1>Carving Ideas into <br><span> Geopolitics.</span></h1>
-    <p>
-      Hello! I’m <strong>Nur</strong>. Web developer and <strong>International Relations enthusiast</strong>. 
-      I craft modern web experiences while analyzing global events, regional conflicts, and international geopolitics.
-    </p>
-    <a href="#columns">Read My Analysis</a>
-  </div>
-</section>
-  
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <div class="section-title">
-      <h2>Handcrafted Projects</h2>
-      <p>A collection of my recent web development work.</p>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1 class="logo">Ashra</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2>Hello, I'm Ashra</h2>
+      <p>Web Developer & International Relations Enthusiast</p>
+      <button onclick="scrollToSection('about')">Learn More</button>
     </div>
+  </header>
 
-    <div class="project-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80');"></div>
-        <div class="card-content">
-          <span class="tech-stack">HTML • CSS • JS</span>
-          <h3>E-Commerce Workshop</h3>
-          <p>A warm, minimal online storefront crafted for bespoke artisans with fluid interactions.</p>
-          <a href="#" class="project-link">Explore Project →</a>
-        </div>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate <strong>Web Developer</strong> with a deep interest in 
+      <strong>International Relations</strong>. My focus areas include:
+    </p>
+    <ul>
+      <li>African Studies</li>
+      <li>Geopolitics of Drug Trafficking</li>
+      <li>Blue Economy</li>
+      <li>South East Asian Affairs</li>
+    </ul>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work">
+    <h2>My Work</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Building responsive, modern websites with HTML, CSS, and JavaScript.</p>
       </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80');"></div>
-        <div class="card-content">
-          <span class="tech-stack">React • Tailwind • Node</span>
-          <h3>Forestry Web App</h3>
-          <p>An eco-focused dashboard designed to monitor and display environmental data seamlessly.</p>
-          <a href="#" class="project-link">Explore Project →</a>
-        </div>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Exploring African Studies, Blue Economy, and Southeast Asian geopolitics.</p>
       </div>
-
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80');"></div>
-        <div class="card-content">
-          <span class="tech-stack">JavaScript • CSS3</span>
-          <h3>Interactive Portfolio</h3>
-          <p>A fast, responsive web application built with clean architecture and organic aesthetics.</p>
-          <a href="#" class="project-link">Explore Project →</a>
-        </div>
+      <div class="card">
+        <h3>Writing</h3>
+        <p>Analyzing global issues like drug trafficking and international cooperation.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <!-- Place before <section id="contact"> or <footer> -->
-<section id="columns">
-  <div class="section-header">
-    <h2>Geopolitical Columns & Analysis</h2>
-    <p>Exploring international relations, power dynamics, and regional security.</p>
-  </div>
-
-  <!-- Regional Category Filter Buttons -->
-  <div class="filter-buttons">
-    <button class="filter-btn active" onclick="filterArticles('all', event)">All Regions</button>
-    <button class="filter-btn" onclick="filterArticles('south-asia', event)">South Asian Affairs</button>
-    <button class="filter-btn" onclick="filterArticles('southeast-asia', event)">Southeast Asia</button>
-    <button class="filter-btn" onclick="filterArticles('africa', event)">African Studies</button>
-  </div>
-
-  <!-- Articles Container -->
-  <div class="articles-grid">
-    
-    <!-- South Asia Article Card -->
-    <article class="article-card south-asia">
-      <span class="tag">South Asian Affairs</span>
-      <h3>The Shifting Geopolitics of the Indian Ocean</h3>
-      <p class="date">August 2026</p>
-      <p>An examination of maritime security, trade routes, and strategic competition across South Asia.</p>
-      <a href="#" class="read-more">Read Column →</a>
-    </article>
-
-    <!-- Southeast Asia Article Card -->
-    <article class="article-card southeast-asia">
-      <span class="tag">Southeast Asia</span>
-      <h3>ASEAN Centrality in Great Power Competition</h3>
-      <p class="date">July 2026</p>
-      <p>Analyzing how Southeast Asian nations balance security and economic ties amidst global rivalry.</p>
-      <a href="#" class="read-more">Read Column →</a>
-    </article>
-
-    <!-- African Studies Article Card -->
-    <article class="article-card africa">
-      <span class="tag">African Studies</span>
-      <h3>Resource Security and Regional Integration in Africa</h3>
-      <p class="date">June 2026</p>
-      <p>Insights into energy transitions, economic partnerships, and political developments across the continent.</p>
-      <a href="#" class="read-more">Read Column →</a>
-    </article>
-
-  </div>
-</section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> Nur. Grown & Built with passion.</p>
+    <p>© 2026 Ashra | Web Developer & IR Enthusiast</p>
   </footer>
 
   <script src="script.js"></script>
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <p>📱 Mobile: <a href="tel:+8801816109999"></a></p>
-</section>
-<script>
-  function filterArticles(category) {
-    const cards = document.querySelectorAll('.article-card');
-    const buttons = document.querySelectorAll('.filter-btn');
-
-    // Update active button styling
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
-
-    // Show/Hide relevant articles
-    cards.forEach(card => {
-      if (category === 'all' || card.classList.contains(category)) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  }
-</script>
-
 </body>
 </html>

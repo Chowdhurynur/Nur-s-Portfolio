@@ -1,21 +1,18 @@
-// Dynamic Year in Footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Smooth scroll to section
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 
-// Smooth reveal effect on scroll for cards
-const cards = document.querySelectorAll('.project-card');
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = 'translateY(0)';
-    }
-  });
-}, { threshold: 0.1 });
-
-cards.forEach((card) => {
-  card.style.opacity = 0;
-  card.style.transform = 'translateY(20px)';
-  card.style.transition = 'all 0.6s ease-out';
-  observer.observe(card);
+  document.getElementById('formResponse').innerText =
+    `Thank you, ${name}! Your message has been received.`;
+  
+  // Reset form
+  this.reset();
 });
